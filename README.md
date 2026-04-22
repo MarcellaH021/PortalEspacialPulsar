@@ -18,6 +18,18 @@ O sistema **simula um portal institucional de divulgação científica**, permit
 
 ---
 
+## 🧩 Decisões Técnicas
+
+### 🌐 Uso da API
+
+A API da NASA foi escolhida por afinidade com o tema espacial, que desperta grande interesse pessoal, além de oferecer conteúdos ricos e relevantes para a proposta do projeto. Durante a fase de pesquisa, a API se destacou pela qualidade dos dados e pela possibilidade de criar uma aplicação interativa e educativa.
+
+### ⭐ Sistema de Favoritos
+
+O sistema de favoritos permite que o usuário salve conteúdos de seu interesse para acessá-los posteriormente. Essa funcionalidade evita que informações importantes ou preferidas sejam perdidas, proporcionando uma experiência mais personalizada e prática.
+
+---
+
 ## 🛠️ Tecnologias e Funcionalidades
 
 ### Tecnologias Utilizadas:
