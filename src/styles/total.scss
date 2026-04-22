@@ -3,9 +3,12 @@ body {
   font-family: Arial, sans-serif;
   background: #0b0f1a;
   color: #fff;
+  padding-top: 80px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
@@ -19,16 +22,39 @@ button {
 }
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-input {
-  display: block;
-  margin: 20px auto;
-  padding: 10px;
-  width: 250px;
-  border-radius: 5px;
-  border: none;
+.date-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  input {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    background: #1e293b;
+    color: #fff;
+
+    font-size: 14px;
+
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+    }
+
+    &:focus {
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.9);
+    }
+  }
 }

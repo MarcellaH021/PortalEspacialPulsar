@@ -3,7 +3,8 @@ import { useProjects } from "../context/ProjectContext";
 import "./Card.scss";
 
 export default function Card({ item }) {
-  const { addFavorite } = useProjects();
+  const { addFavorite, removeFavorite, favorites } = useProjects();
+  const isFavorite = favorites.some((fav) => fav.id === item.id);
 
   return (
     <div className="card">
@@ -16,8 +17,10 @@ export default function Card({ item }) {
 
       <br />
 
-      <button onClick={() => addFavorite(item)}>
-        ⭐
+      <button
+        onClick={() => (isFavorite ? removeFavorite(item.id) : addFavorite(item))}
+      >
+        {isFavorite ? "❤️" : "🤍"}
       </button>
     </div>
   );

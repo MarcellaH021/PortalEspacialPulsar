@@ -18,6 +18,23 @@ O sistema **simula um portal institucional de divulgação científica**, permit
 
 ---
 
+## 🛠️ Tecnologias e Funcionalidades
+
+### Tecnologias Utilizadas:
+* **React 19 & Vite:** Framework e ferramenta de build modernos para alta performance.
+* **React Router Dom:** Gerenciamento de navegação entre Home, Detalhes e Favoritos.
+* **Context API & LocalStorage:** Sistema global de favoritos com persistência de dados.
+* **SASS (SCSS):** Estilização avançada com variáveis e aninhamento.
+* **NASA APOD API:** Consumo de dados reais de astronomia.
+
+### Funcionalidades Implementadas:
+* **Exploração:** Listagem de imagens aleatórias da NASA.
+* **Busca:** Filtro de conteúdos por data específica.
+* **Favoritos:** Sistema para salvar e remover itens da lista de interesses.
+* **Responsividade:** Interface adaptável para diferentes dispositivos.
+
+---
+
 ## ▶️ Instruções de Execução
 
 ### 📌 Pré-requisitos
@@ -28,16 +45,13 @@ O sistema **simula um portal institucional de divulgação científica**, permit
 ### 🚀 Passos para execução
 
 ```bash
-# Clonar o repositório
-git clone https://github.com/seu-usuario/seu-projeto.git
-
-# Acessar a pasta
-cd seu-projeto
+# Acessar a pasta do projeto
+cd app-espace
 
 # Instalar dependências
 npm install
 
-# Rodar o projeto
+# Rodar o projeto em modo de desenvolvimento
 npm run dev
 ```
 
@@ -55,27 +69,24 @@ http://localhost:5173
 
 ```
 app-espace/
-├── node_modules/        # Dependências do projeto
-├── public/              # Arquivos públicos (index.html, etc)
+├── public/              # Arquivos públicos (ícones e favicon)
 ├── src/                 # Código fonte principal
-│   ├── assets/          # Imagens, ícones e recursos estáticos
-│   ├── pages/           # Páginas da aplicação
-│   │   ├── about.jsx
-│   │   ├── home.jsx
-│   │   ├── news.jsx
-│   ├── App.css          # Estilos globais
-│   ├── App.jsx          # Componente principal
-│   ├── index.css        # Estilos base
-│   ├── main.jsx         # Ponto de entrada da aplicação
-├── .gitignore           # Arquivos ignorados pelo Git
-├── eslint.config.js     # Configuração do ESLint
-├── index.html           # HTML principal
-├── package-lock.json    # Controle de versões das dependências
-├── package.json         # Configuração do projeto
-├── README.md            # Documentação do projeto
-├── vite.config.js       # Configuração do Vite
+│   ├── assets/          # Imagens de backup e recursos estáticos
+│   ├── components/      # Componentes como Navbar e Card
+│   ├── context/         # Gerenciamento de estado (Favoritos)
+│   ├── hooks/           # Hooks customizados (LocalStorage)
+│   ├── pages/           # Páginas: Home, About e NewsFav
+│   ├── service/         # Integração com a API da NASA
+│   ├── styles/          # Estilização global em SCSS
+│   ├── App.jsx          # Componente principal e Rotas
+│   ├── main.jsx         # Ponto de entrada do React
+├── index.html           # HTML base
+├── package.json         # Dependências e scripts
+└── vite.config.js       # Configuração do Vite
 ```
 
 ---
 
 ## 💡 Considerações Finais
+
+Este projeto demonstra a integração bem-sucedida entre uma interface React moderna e uma API externa complexa, aplicando conceitos de estados globais, persistência de dados e roteamento dinâmico para criar uma experiência de usuário fluida e informativa no campo da divulgação científica.
